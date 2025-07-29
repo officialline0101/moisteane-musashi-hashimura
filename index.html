@@ -1204,7 +1204,6 @@
                 phone: document.getElementById('phone').value.trim(),
                 visitCount: visitCount,
                 selectedSymptom: selectedSymptom && selectedSymptom.length > 0 ? selectedSymptom : null, // 空の選択肢をチェック
-                irradiationsCount: irradiationsCount,
                 dates: selectedFullDate ? [selectedFullDate] : null, // 空チェック
                 message: document.getElementById('message').value.trim()
             };
@@ -1270,7 +1269,7 @@
                 return;
             }
 
-            const url = 'https://script.google.com/macros/s/AKfycbwGfzIEv5_F9QYaCI6PEg0VL3NsgbORC04JuHPNE2-VbZio9MIkBkwF_gZMuXz9o8HM2Q/exec' +
+            const url = 'https://script.google.com/macros/s/AKfycbxuWRigaKjshzi9AGZg-7CqLcVwRE-2KS7ZFK-sGmeVjsYCMaBNVX4F2ZPBM7QMfTKA/exec' +
                 `?startTime=${startTime.toISOString()}&endTime=${endTime.toISOString()}`;
 
             try {
